@@ -1,0 +1,4 @@
+Aquesta carpeta es genera automàticament:
+- best_sellers[_<data>].pkl, co_purchases[_<data>].pkl, user_profiles[_<data>].pkl  <- training/train_model.py
+- embeddings.npy, product_ids.pkl, vectorizer.pkl, svd.pkl                          <- training/build_embeddings.py
+No hi escriviu res a mà.
