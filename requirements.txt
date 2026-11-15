@@ -1,0 +1,11 @@
+# Runtime
+numpy
+pandas
+scipy
+scikit-learn
+lightgbm
+implicit
+requests
+
+# Tests
+pytest

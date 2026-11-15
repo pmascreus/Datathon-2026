@@ -1,3 +1,0 @@
-# Dependències extra per a training/ i src/, a sumar a starter/requirements.txt
-scikit-learn
-numpy
