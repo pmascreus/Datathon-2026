@@ -238,19 +238,6 @@ Els artefactes van a `models/<tag>/`. No es publica el bundle perquè `users.pkl
 conté **59.149 identificadors reals** de compradors; al repo només hi ha
 `meta.json` com a testimoni del tall. Es reconstrueix amb `train.py`.
 
-### Cinc regles que no són d'estil
-
-1. **Un sol procés per equip.** `TEAM_ID` i la taula `submissions` són
-   compartides: dues respostes al mateix `request_id` és un enviament duplicat.
-2. **No executar `evaluate.py`, `train.py` ni `compare.py` mentre se serveix.**
-   Competeixen per la mateixa quota d'API; vam mesurar la cobertura caient al
-   **52%**.
-3. **No committejar `.env`.**
-4. **Rellotge sincronitzat.** Les marques de temps venen de la plataforma, així
-   que els terminis es mesuren en el seu rellotge. El codi en calcula el
-   desfasament, però un rellotge molt desviat ho trenca igualment.
-5. **Mai `in_stock`.** Estava prohibit.
-
 ## Executar-ho
 
 ```powershell
